@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>e-yut · Projects</title>
+<meta name="description" content="Open-source tools for mass spectrometry, lipidomics, image analysis and chemistry education.">
+<style>
+  :root { --bg:#0f172a; --card:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f8fafc; --card:#fff; --text:#0f172a; --muted:#475569; --accent:#0369a1; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--text); }
+  main { max-width:960px; margin:0 auto; padding:0 1.25rem; }
+  header { padding:5rem 0 3rem; text-align:center; }
+  h1 { font-size:clamp(2.2rem,6vw,3.5rem); margin:0 0 .5rem; }
+  h1 span { color:var(--accent); }
+  header p { color:var(--muted); max-width:36rem; margin:0 auto 1.5rem; }
+  .btn { display:inline-block; padding:.6rem 1.2rem; border-radius:999px; background:var(--accent); color:var(--bg); font-weight:600; text-decoration:none; }
+  .grid { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); padding-bottom:3rem; }
+  .card { background:var(--card); border-radius:12px; padding:1.4rem; text-decoration:none; color:inherit; border:1px solid transparent; transition:transform .15s,border-color .15s; display:block; }
+  .card:hover, .card:focus-visible { transform:translateY(-3px); border-color:var(--accent); }
+  .card h3 { margin:0 0 .4rem; color:var(--accent); }
+  .card p { margin:0; color:var(--muted); font-size:.95rem; }
+  h2 { margin-bottom:1rem; }
+  footer { text-align:center; color:var(--muted); padding:2rem 0 3rem; font-size:.9rem; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Eylan Yutuc</span></h1>
+    <p>I build open-source tools for mass spectrometry, lipidomics, image analysis and chemistry education.</p>
+    <a class="btn" href="https://github.com/e-yut">View on GitHub</a>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <a class="card" href="https://github.com/e-yut/RAWMzMLConverter">
+        <h3>RAWMzMLConverter</h3>
+        <p>Convert RAW mass spectrometry files to the open mzML format.</p>
+      </a>
+      <a class="card" href="https://github.com/e-yut/MSPeakIntegrator">
+        <h3>MSPeakIntegrator</h3>
+        <p>Detect and integrate peaks in mass spectrometry data.</p>
+      </a>
+      <a class="card" href="https://github.com/e-yut/lipid_exact_mass_calculator">
+        <h3>Lipid Exact Mass Calculator</h3>
+        <p>Calculate exact masses of lipid species for lipidomics workflows.</p>
+      </a>
+      <a class="card" href="https://github.com/e-yut/neurite_outgrowth_analyser">
+        <h3>Neurite Outgrowth Analyser</h3>
+        <p>Quantify neurite outgrowth from microscopy images.</p>
+      </a>
+      <a class="card" href="https://github.com/e-yut/aufbau-explorer">
+        <h3>Aufbau Explorer</h3>
+        <p>Interactively explore electron configurations and the Aufbau principle.</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>© <script>document.write(new Date().getFullYear())</script> e-yut · <a href="https://github.com/e-yut">github.com/e-yut</a></footer>
+</main>
+</body>
+</html>
